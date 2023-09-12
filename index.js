@@ -6,7 +6,7 @@ const path = require('path');
 app.use(express.static(__dirname + '/_site'));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, './_site/index.html'));
+    res.sendFile(path.join(__dirname, './_site/index.html'));
 });
 
 // app.listen(port, () => {
