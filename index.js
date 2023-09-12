@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-// const port = 3000;
+// const port = 443;
 
-app.use(express.static(__dirname + '/_site'));
+app.use(express.static(__dirname));
 
 app.get("/", (req, res) => {
-    res.sendFile('/_site/index.html', { root: __dirname });
+    res.sendFile(__dirname + "/_site/index.html");
 });
 
 // app.listen(port, () => {
