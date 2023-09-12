@@ -1,13 +1,13 @@
 {
   "name": "jekyll",
   "version": "1.0.0",
-  "description": "jekyll test",
+  "description": "Deploy Jekyll with Kinsta's StSH",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Marcia Ramos",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2"
   }
