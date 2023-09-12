@@ -9,7 +9,7 @@ console.log(filename);
 app.use(express.static(__dirname + '/_site'));
 
 app.get("/", (req, res) => {
-    res.sendFile('../_site/index.html', { root: __dirname });
+    res.sendFile('./_site/index.html', { root: __dirname });
 });
 
 // app.listen(port, () => {
