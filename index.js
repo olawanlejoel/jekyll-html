@@ -1,13 +1,8 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-// const port = 443;
 
 app.use(express.static(__dirname));
 
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+app.listen(8080, () => {
+	console.log(`Jekyll Static Site listening on port 8080!`);
 });
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}!`);
-// });
