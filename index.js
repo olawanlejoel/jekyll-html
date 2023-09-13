@@ -1,13 +1,9 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-// const port = 3000;
+const path = require('path');
 
-app.use(express.static(__dirname + '/_site'));
+app.use(express.static(path.resolve(__dirname, './_site')));
 
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/_site/index.html");
+app.listen(8080, () => {
+	console.log('Jekyll Static Site listening on port 8080!');
 });
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}!`);
-// });
